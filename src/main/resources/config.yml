@@ -1,0 +1,37 @@
+# 摹刻指令的配置文件
+#
+# 格式:
+# ```
+# <指令标识>:
+#   usage: <指令用法> (无实际用途)
+#   simple_description: <指令描述>
+#   verbose_description: <指令详细描述>
+#   feedback: <指令执行的反馈>
+# ```
+
+commands:
+  town_new:
+    usage: /t new <城镇名>
+    simple_description: 创建一个新的城镇
+    verbose_description: 创建一个新的城镇, 城镇名字不能包含空格
+    feedback: <aqua>你建立了一个叫做 <town_name> 的城镇
+  town_claim:
+    usage: /t claim
+    simple_description: 将当前区块圈成你的城镇领地
+    verbose_description: 将当前区块圈成你的城镇领地, 以保护你的建筑
+    feedback: <aqua>你将这个区块圈成了你的城镇领地
+  town_deposit:
+    usage: /t deposit <金币数量>
+    simple_description: 将金币存入你的城镇银行
+    verbose_description: 将金币存入你的城镇银行, 以供城镇圈地等用途
+    feedback: <aqua>你向你的城镇银行存入了 <yellow><amount></yellow> 金币
+  town_spawn:
+    usage: /t spawn
+    simple_description: 传送到你的城镇
+    verbose_description: 传送到你的城镇, 可能需要支付一些费用
+    feedback: <aqua>你传送到了城镇的传送点
+  town_add:
+    usage: /t add <玩家>
+    simple_description: 邀请一个玩家加入你的城镇
+    verbose_description: 邀请一个玩家加入你的城镇, 以共同建设城镇
+    feedback: <aqua>你邀请了 <white><player></white> 加入你的城镇
