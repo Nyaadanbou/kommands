@@ -3,8 +3,4 @@ version: '1.0-SNAPSHOT'
 main: cc.mewcraft.kommands.Kommands
 description: Provide mock commands to the server
 api-version: '1.21'
-dependencies:
-  server:
-    Kotlin:
-      load: BEFORE
-      required: true
+dependencies: {}
